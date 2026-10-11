@@ -40,7 +40,7 @@ tempoStack:
 # MinIO storage configuration
 minio:
   # MinIO deployment settings
-  image: quay.io/minio/minio
+  image: docker.io/pgsty/minio:RELEASE.2026-08-04T00-00-00Z
   imagePullPolicy: Always
   
   # Storage configuration
