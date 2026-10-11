@@ -39,7 +39,7 @@ spec:
             periodSeconds: 10
             successThreshold: 1
             failureThreshold: 10
-          image: docker.io/minio/minio:latest
+          image: docker.io/pgsty/minio:RELEASE.2026-08-04T00-00-00Z
           imagePullPolicy: IfNotPresent
           resources: {}
           args:
