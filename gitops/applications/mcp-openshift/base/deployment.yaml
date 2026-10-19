@@ -26,5 +26,5 @@ spec:
             containerPort: 8000
             protocol: TCP
         command: ["./kubernetes-mcp-server"]
-        args: ["--sse-port", "8000"]
+        args: ["--port", "8000"]
         resources: {}
