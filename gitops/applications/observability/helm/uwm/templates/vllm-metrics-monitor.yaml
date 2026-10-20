@@ -3,7 +3,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:
   name: {{ .Values.vllmMetricsMonitor.name }}
-  namespace: {{ include "uwm.targetNamespace" . }}
+  namespace: {{ .Values.vllmMetricsMonitor.namespace | default (include "uwm.targetNamespace" .) }}
   labels:
     {{- include "uwm.labels" . | nindent 4 }}
     {{- with .Values.vllmMetricsMonitor.labels }}
