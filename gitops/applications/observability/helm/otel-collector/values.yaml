@@ -160,7 +160,7 @@ collector:
             - otlphttp/dev
       telemetry:
         metrics:
-          address: 0.0.0.0:8888
+          level: detailed
 
 # Tempo configuration for exporters
 tempo:
@@ -229,7 +229,7 @@ sidecars:
               - otlp
         telemetry:
           metrics:
-            address: '0.0.0.0:8888'
+            level: detailed
     
     # Target allocator configuration
     targetAllocator:
@@ -297,7 +297,7 @@ sidecars:
               - otlp
         telemetry:
           metrics:
-            address: '0.0.0.0:8888'
+            level: detailed
     
     # Target allocator configuration
     targetAllocator:
