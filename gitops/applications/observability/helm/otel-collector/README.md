@@ -89,7 +89,7 @@ prometheus:
       jobName: "llama3-2-3b"
       scrapeInterval: "15s"
       targets:
-        - "llama3-2-3b-predictor.llama-serve.svc.cluster.local:8080"
+        - "llama3-2-3b-predictor.llama-serving.svc.cluster.local:8080"
 ```
 
 #### Sidecar Collectors
@@ -184,7 +184,7 @@ prometheus:
       jobName: "llama3-2-3b"
       scrapeInterval: "15s"
       targets:
-        - "llama3-2-3b-predictor.llama-serve.svc.cluster.local:8080"
+        - "llama3-2-3b-predictor.llama-serving.svc.cluster.local:8080"
     my_service:
       jobName: "my-custom-service"
       scrapeInterval: "30s"
