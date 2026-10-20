@@ -73,6 +73,11 @@ vllmMetricsMonitor:
   enabled: true
   name: vllm-metrics
   
+  # Namespace to create the PodMonitor in. It must be the namespace of the pods it
+  # selects: user workload monitoring ignores namespaceSelector, so a PodMonitor
+  # only scrapes pods in its own namespace. Falls back to the chart namespace.
+  namespace: llama-serving
+  
   # Metrics endpoint configuration
   podMetricsEndpoints:
     - interval: 15s
